@@ -5,6 +5,7 @@
  */
 package paquete4;
 
+import paquete2.Prestamo;
 import paquete5.Persona;
 
 /**

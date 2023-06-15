@@ -9,11 +9,10 @@ import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.Scanner;
-import paquete2.Prestamo;
-import paquete3.PrestamoAutomovil;
-import paquete4.PrestamoEducativo;
-import paquete5.Institucion;
-import paquete5.Persona;
+import paquete2.*;
+import paquete3.*;
+import paquete4.*;
+import paquete5.*;
 
 public class Ejecutor {
     
@@ -140,10 +139,10 @@ public class Ejecutor {
                     entrada.nextLine();
 
                     // Creamos la instancia de PrestamoEducativo
-                    PrestamoEducativo prestamoEducativo = new PrestamoEducativo(beneficiario, tiempoPrestamo, ciudad, nivelEstudio, nombreCentroEducativo, valorCarrera);
+                    // PrestamoEducativo prestamoEducativo = new PrestamoEducativo(beneficiario, tiempoPrestamo, ciudad, nivelEstudio, nombreCentroEducativo, valorCarrera);
 
                     // Agregamos el préstamo a la lista
-                    misPrestamos.add(prestamoEducativo);
+                    misPrestamos.add(new PrestamoEducativo(beneficiario, tiempoPrestamo, ciudad, nivelEstudio, nombreCentroEducativo, valorCarrera));
                     
                     break;
                 
